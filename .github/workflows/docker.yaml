@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: srirammaster/employee:latest
+          tags: srirammaster/employee:3
