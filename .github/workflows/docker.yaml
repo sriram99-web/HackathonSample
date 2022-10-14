@@ -10,6 +10,9 @@ jobs:
     runs-on: self-hosted
     steps:
       -
+        name: Listuser
+        run: whoami
+      -
         name: Checkout
         uses: actions/checkout@v3
       -
