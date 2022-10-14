@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-registry
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: employee-registry
+  template:
+    metadata:
+      labels:
+        app: employee-registry
+    spec:
+      containers:
+      - image: srirammaster/employee:latest
+        name: employee-registry
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
