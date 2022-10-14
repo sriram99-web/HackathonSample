@@ -1,5 +1,5 @@
 <?php
-            $conn = new mysqli('localhost','root','','test');
+            $conn = new mysqli('20.62.228.107','root','','test');
               if($conn->connect_error){
                 echo "$conn->connect_error";
                 die("Connection Failed : ". $conn->connect_error);
